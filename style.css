@@ -463,9 +463,8 @@ footer .logo {
   opacity: 1;
 }
 
-.social img {
-  -webkit-filter: invert(1);
-          filter: invert(1);
+.social svg {
+  color: #fff;
   width: 20px;
   height: 20px;
 }
@@ -698,15 +697,30 @@ footer .logo {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .photos {
-    height: 500px;
+    height: 580px;
   }
+  .drummer .band__about {
+    max-width: 120px;
+  }
+  .guitarist .band__about {
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 320px) {
   .heading_big {
     font-size: 2em;
   }
   .heading_mid {
     font-size: 1.5em;
+  }
+}
+
+@media (max-height: 1366px) {
+  .screen-height {
+    height: auto;
   }
 }
 
