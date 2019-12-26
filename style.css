@@ -465,6 +465,7 @@ section {
   height: 50px;
   font-weight: 400;
   font-size: 1em;
+  cursor: pointer;
 }
 
 .btn:before {
@@ -782,8 +783,8 @@ footer .logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .product-holder .product-info img {
@@ -868,7 +869,7 @@ footer .logo {
 .date-holder .date-month,
 .date-holder .date-year {
   text-transform: uppercase;
-  font-size: .9rem;
+  font-size: 0.9rem;
   letter-spacing: 1px;
 }
 
@@ -1093,7 +1094,7 @@ footer .logo {
             columns: 1;
   }
   .product-holder {
-    font-size: .7em;
+    font-size: 0.7em;
   }
 }
 
