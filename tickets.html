@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Seether rock band</title>
+  <title>Seether | Tickets</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -16,7 +16,7 @@
     <div class="container">
       <div class="header-contaier">
         <div class="logo">
-          <a href="#">
+          <a href="index.html">
             <img src="img/logo.png" alt="logo" width="200" height="76" />
           </a>
         </div>
@@ -28,7 +28,7 @@
               <li><a href="discography.html">Discography</a></li>
               <li><a href="merchandise.html">Merchandise</a></li>
               <li><a href="tour_dates.html">Tour dates</a></li>
-              <li><a href="tickets.html">Tickets</a></li>
+              <li><a href="tickets.html" class="header-nav__link--active">Tickets</a></li>
             </ul>
           </div>
           <ul>
@@ -36,102 +36,52 @@
             <li><a href="discography.html">Discography</a></li>
             <li><a href="merchandise.html">Merchandise</a></li>
             <li><a href="tour_dates.html">Tour dates</a></li>
-            <li><a href="tickets.html">Tickets</a></li>
+            <li><a href="tickets.html" class="header-nav__link--active">Tickets</a></li>
           </ul>
         </nav>
       </div>
     </div>
   </header>
   <div class="main-conent">
-    <section class="bg my-0">
-      <div class="screen-height">
-        <h1 class="heading heading_big">Seether's 20 year anniversary!</h1>
-        <div class="band">
-          <div class="img-holder guitarist">
-            <img src="img/guitarist.png" alt="" class="filter-brightness">
-            <div class="band__about">
-              <h3>Corey Lowery</h3>
-              <p>Guitar</p>
-            </div>
-          </div>
-          <div class="img-holder vocalist">
-            <img src="img/vocalist.png" alt="" class="filter-brightness">
-            <div class="band__about">
-              <h3>Shaun Morgan</h3>
-              <p>Vocals/Guitar</p>
-            </div>
-          </div>
-          <div class="img-holder basist">
-            <img src="img/basist.png" alt="" class="filter-brightness">
-            <div class="band__about">
-              <h3>Dale Stewart</h3>
-              <p>Bass</p>
-            </div>
-          </div>
-          <div class="img-holder drummer">
-            <img src="img/drummer.png" alt="" class="filter-brightness">
-            <div class="band__about">
-              <h3>John Humphrey</h3>
-              <p>Drums</p>
-            </div>
-          </div>
+    <section class="container">
+      <h1 class="heading heading__big">Buy a ticket</h1>
+      <form action="#" class="form-holder">
+        <div class="form-row">
+          <label for="event-name" class="form-label">Event:</label>
+          <select id="event-name" class="form-select">
+            <option value="none">Choose event</option>
+            <option>26 jan - Seether 2020</option>
+          </select>
         </div>
-      </div>
-    </section>
-    <section>
-      <div class="container">
-        <h2 class="heading heading_mid">Recent media</h2>
-        <div class="row">
-          <div class="col-12 col-md-4 flex-center">
-            <blockquote class="blockquote blockquote_small">
-              "20 years and over 8 albums later we’re still rocking out and all you amazing people are still showing up
-              to
-              our concerts. We’re a long way from where we began and we’re only getting started!”
-              <cite>Shaun Morgan</cite>
-            </blockquote>
-          </div>
-          <div class="col-12 col-md-8">
-            <div class="photos my-30">
-              <div class="photos__item">
-                <img src="img/img1.jpg" alt="">
-              </div>
-              <div class="photos__item">
-                <img src="img/img2.jpg" alt="">
-              </div>
-              <div class="photos__item">
-                <img src="img/img3.jpg" alt="">
-              </div>
-            </div>
-          </div>
+        <div class="form-row">
+          <label for="first-name" class="form-label">First Name:</label>
+          <input type="text" placeholder="First name" id="first-name" class="form-input">
         </div>
-        <div class="yt-video col-12">
-          <iframe src="https://www.youtube.com/embed/9_7HILn_12w"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="form-row">
+          <label for="last-name" class="form-label">Last Name:</label>
+          <input type="text" placeholder="Last name" id="last-name" class="form-input">
         </div>
-      </div>
-    </section>
-    <section>
-      <div class="container">
-        <h2 class="heading heading_mid">Subscribe to our newsletter</h2>
-        <p class="text-center">Join our mailing list to get the latest news, tour updates, releases and more. You’ll be
-          the first to know.
-        </p>
-        <form action="#" class="form-holder ">
-          <div class="form-row">
-            <label for="first-name" class="form-label">First Name:</label>
-            <input type="text" placeholder="First name" id="first-name" class="form-input">
-          </div>
-          <div class="form-row">
-            <label for="last-name" class="form-label">Last Name:</label>
-            <input type="text" placeholder="Last name" id="last-name" class="form-input">
-          </div>
-          <div class="form-row">
-            <label for="email" class="form-label">Email:</label>
-            <input type="email" placeholder="yourmail@gmail.com" class="form-input" id="email">
-          </div>
-          <button type="submit" class="btn">Subscribe</button>
-        </form>
-      </div>
+        <div class="form-row">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" placeholder="yourmail@gmail.com" class="form-input" id="email">
+        </div>
+        <div class="form-row">
+          <label for="quantity" class="form-label">Quatity:</label>
+          <input type="number" max="4" min="1" value="1" id="quantity" class="form-input">
+        </div>
+        <div class="form-row form-column">
+          <p>Choose ticket category:</p>
+          <label class="checkbox-radio-label"><input type="radio" value="vvip" name="ticket-category"> VVIP -
+            200$</label>
+          <label class="checkbox-radio-label"><input type="radio" value="vip" name="ticket-category"> VVIP - 150$</label
+            class="checkbox-radio-label">
+          <label class="checkbox-radio-label"><input type="radio" value="ga1" name="ticket-category"> GA1 - 100$</label
+            class="checkbox-radio-label">
+          <label class="checkbox-radio-label"><input type="radio" value="ga2" name="ticket-category"> GA2 - 70$</label>
+        </div>
+
+        <button type="submit" class="btn">Buy</button>
+      </form>
     </section>
   </div>
   <footer class="footer mt-20">
@@ -139,7 +89,7 @@
       <div class="row flex-between-center">
         <div class="col-2 col-md-2 logo-wrapper">
           <div class="logo">
-            <a href="#">
+            <a href="index.html">
               <img src="img/792583.png" alt="logo" width="200" height="76" />
             </a>
           </div>
